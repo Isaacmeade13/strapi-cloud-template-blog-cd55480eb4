@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::type.type",
+      "inversedBy": "locations"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "guests": {
+      "type": "integer"
+    },
+    "benefit": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "string",
+      "required": false,
+      "default": "£"
+    },
+    "isSuperHost": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
