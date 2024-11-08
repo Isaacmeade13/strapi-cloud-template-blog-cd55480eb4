@@ -690,6 +690,46 @@ export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
     isSuperHost: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<false>;
+    cateringAndDrinks: Schema.Attribute.Component<
+      'common.availability-text',
+      false
+    > &
+      Schema.Attribute.Required;
+    tablesAndSeating: Schema.Attribute.Component<
+      'common.availability-text',
+      false
+    > &
+      Schema.Attribute.Required;
+    alcoholicBeverages: Schema.Attribute.Component<
+      'common.availability-text',
+      false
+    > &
+      Schema.Attribute.Required;
+    restrooms: Schema.Attribute.Component<'common.availability-text', false> &
+      Schema.Attribute.Required;
+    musicAndAV: Schema.Attribute.Component<'common.availability-text', false> &
+      Schema.Attribute.Required;
+    allowedEvents: Schema.Attribute.Component<
+      'common.availability-text',
+      false
+    > &
+      Schema.Attribute.Required;
+    accommodation: Schema.Attribute.Component<
+      'common.availability-text',
+      false
+    > &
+      Schema.Attribute.Required;
+    parking: Schema.Attribute.Component<'common.availability-text', false> &
+      Schema.Attribute.Required;
+    event: Schema.Attribute.Component<'common.availability-text', false> &
+      Schema.Attribute.Required;
+    hostName: Schema.Attribute.String & Schema.Attribute.Required;
+    sqlft: Schema.Attribute.Integer;
+    hour: Schema.Attribute.Integer;
+    about: Schema.Attribute.Text;
+    locationImage: Schema.Attribute.Media<'images'>;
+    policyText: Schema.Attribute.Text;
+    spaceIncludes: Schema.Attribute.Component<'common.text', true>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

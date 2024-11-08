@@ -60,6 +60,89 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "cateringAndDrinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "tablesAndSeating": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "alcoholicBeverages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "restrooms": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "musicAndAV": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "allowedEvents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "accommodation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "parking": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "event": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.availability-text",
+      "required": true
+    },
+    "hostName": {
+      "type": "string",
+      "required": true
+    },
+    "sqlft": {
+      "type": "integer"
+    },
+    "hour": {
+      "type": "integer"
+    },
+    "about": {
+      "type": "text"
+    },
+    "locationImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "policyText": {
+      "type": "text"
+    },
+    "spaceIncludes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.text"
     }
   }
 }
