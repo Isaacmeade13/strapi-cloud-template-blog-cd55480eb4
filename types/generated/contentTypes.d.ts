@@ -730,6 +730,7 @@ export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
     locationImage: Schema.Attribute.Media<'images'>;
     policyText: Schema.Attribute.Text;
     spaceIncludes: Schema.Attribute.Component<'common.text', true>;
+    address: Schema.Attribute.String & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
