@@ -147,6 +147,12 @@
     "address": {
       "type": "string",
       "required": true
+    },
+    "location_names": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location-name.location-name",
+      "mappedBy": "location"
     }
   }
 }
