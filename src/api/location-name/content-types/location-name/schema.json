@@ -14,9 +14,9 @@
     "name": {
       "type": "string"
     },
-    "location": {
+    "locations": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::location.location",
       "inversedBy": "location_names"
     }
