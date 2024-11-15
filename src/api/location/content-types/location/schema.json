@@ -154,7 +154,7 @@
       "target": "api::location-name.location-name",
       "mappedBy": "locations"
     },
-    "inflexible": {
+    "isFlexible": {
       "type": "boolean",
       "default": false
     }
