@@ -153,6 +153,10 @@
       "relation": "manyToMany",
       "target": "api::location-name.location-name",
       "mappedBy": "locations"
+    },
+    "inflexible": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

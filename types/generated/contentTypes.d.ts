@@ -735,6 +735,7 @@ export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
       'manyToMany',
       'api::location-name.location-name'
     >;
+    inflexible: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
