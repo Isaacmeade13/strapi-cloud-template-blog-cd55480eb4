@@ -157,6 +157,12 @@
     "isFlexible": {
       "type": "boolean",
       "default": false
+    },
+    "activities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::activity.activity",
+      "inversedBy": "locations"
     }
   }
 }
