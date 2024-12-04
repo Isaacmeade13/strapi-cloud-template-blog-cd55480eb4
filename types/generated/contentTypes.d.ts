@@ -780,7 +780,7 @@ export interface ApiLocationLocation extends Struct.CollectionTypeSchema {
   info: {
     singularName: 'location';
     pluralName: 'locations';
-    displayName: 'Location';
+    displayName: 'Venue';
     description: '';
   };
   options: {
