@@ -166,6 +166,10 @@
     },
     "policyDaysCount": {
       "type": "integer"
+    },
+    "pricePer": {
+      "type": "string",
+      "default": "hr"
     }
   }
 }
